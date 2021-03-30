@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="left"></div>
+        <div class="right">
+            <form name="calculator">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="screen" />
+                        </td>
+                        <td>
+                            <input type="button" name="C" value="C" onclick="reSet();" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" name="seven" value="7" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="eight" value="8" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="nine" value="9" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="divide" value="/" class="addValue" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="four" value="4" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="five" value="5" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="six" value="6" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="times" value="*" class="addValue" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="one" value="1" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="two" value="2" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="three" value="3" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="minus" value="-" class="addValue" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="zero" value="0" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="decimal" value="." class="addValue" />
+                        </td>
+
+                        <td>
+                            <input type="button" name="plus" value="+" class="addValue" />
+                        </td>
+                        <td>
+                            <input type="button" name="equals-to" value="=" id="solve" onclick="calculate();"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
