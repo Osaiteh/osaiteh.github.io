@@ -1,91 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
+      
     <main>
-        <div class="left"></div>
-        <div class="right">
-            <form name="calculator">
-                <table>
-                    <tr>
-                        <td>
-                            <input type="text" id="screen" />
-                        </td>
-                        <td>
-                            <input type="button" name="C" value="C" onclick="reSet();" />
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="button" name="seven" value="7" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="eight" value="8" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="nine" value="9" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="divide" value="/" class="addValue" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="four" value="4" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="five" value="5" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="six" value="6" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="times" value="*" class="addValue" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="one" value="1" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="two" value="2" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="three" value="3" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="minus" value="-" class="addValue" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="zero" value="0" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="decimal" value="." class="addValue" />
-                        </td>
-
-                        <td>
-                            <input type="button" name="plus" value="+" class="addValue" />
-                        </td>
-                        <td>
-                            <input type="button" name="equals-to" value="=" id="solve" onclick="calculate();"/>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+      <div class="left">
+          <header>
+          <h1>Basic Calculator</h1>
+          <img src="./assets/005-maths.svg" alt="">
+      <img src="./assets/002-equal-mathematical-sign.svg" alt="">
+<img src="./assets/006-percent-sign.svg" alt="">
+<img src="./assets/\" alt="">
+        </header>
+    </div>
+      <div class="right">
+        <div class="page">
+          <form id="calculator">
+              <p id="display"></p>
+            <input type="text" id="input" />
+            <div class="buttons">
+                <div><button class="special">C</button>
+              <button class="special"><img src="./assets/005-divide.svg" alt=""></button>
+              <button class="special"><img src="./assets/004-multiply-mathematical-sign.svg" alt=""></button>
+              <button class="special"><img src="./assets/008-backspace.svg" alt=""></button>
+              </div>
+                <div><button class="number">7</button>
+              <button class="number">8</button>
+              <button class="number">9</button>
+              <button class="special"><img src="./assets/006-percent-sign.svg" alt=""></button>
+              </div>
+                <div><button class="number">4</button>
+              <button class="number">5</button>
+              <button class="number">6</button>
+              <button class="special"><img src="./assets/003-minus-sign.svg" alt=""></button>
+              </div>
+                <div><button class="number">1</button>
+              <button class="number">2</button>
+              <button class="number">3</button>
+              <button class="special"><img src="./assets/001-plus-positive-add-mathematical-symbol.svg" alt=""></button>
+              </div>
+                <div>
+              <button class="number">0</button>
+              <button class="number">00</button>
+              <button class="other">.</button>
+              <button class="equal"><img src="./assets/002-equal-mathematical-sign.svg" alt=""></button>
+            </div>
         </div>
+          </form>
+        </div>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
