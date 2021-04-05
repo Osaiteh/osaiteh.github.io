@@ -1,12 +1,82 @@
+/* //reset styles */
+@import "reset.css";
 main{
     display: flex;
+    justify-content: space-evenly;
+    background-image: url("./assets/Colorful-Stingrays.svg");
+height: 100vh;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+    align-items: center;
 }
-.right{
-    flex: 1;
-    min-height: 100vh;
-    padding: 5vh 5vw;
+
+header{
+text-align: center;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 36px;
+line-height: 72px;
+color: white;
 }
-.left{
-    flex: 1;
-    display: flex; 
- }
+header > img{
+    width: 30px;
+}
+.page{
+    margin: 5%;
+}
+
+#calculator{
+    height: 70vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#display{
+    height: 35px;
+    border:none;
+    width: auto;
+    background-color: white;
+    /* border: 1px solid springgreen; */
+}
+#input{
+    width: auto;
+    height: 70px;
+    border:none;
+    box-sizing: border-box;
+    border-radius: 3% 3% 0 0;
+    /* border: 1px solid springgreen; */
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.buttons > div{
+    display: flex;
+    /* align-items: center; */
+}
+button{
+    height: 60px;
+    width: 10vw;
+    font-size: 25px;
+    background-color: white;
+    border: unset;
+    border: 0.001px solid rgba(128, 128, 128, 0.267);
+}button:hover{
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+.special{
+    color: #ff4500;
+    font-weight: 600;
+    background-color: rgba(221, 217, 218, 0.719);
+}
+.equal{
+    background-color: orangered;
+}
+button > img{
+    height: 20px;
+}
+
